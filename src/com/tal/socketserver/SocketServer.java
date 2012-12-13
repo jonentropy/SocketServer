@@ -57,6 +57,7 @@ public class SocketServer {
 		while ((inputLine = in.readLine()) != null) {
 			System.out.println("Input received from " + clientSocket.getInetAddress() +": " + inputLine);
 			outputLine = "DATA=" + importantData;
+			importantData++;
 			out.println(outputLine);
 		}
 
